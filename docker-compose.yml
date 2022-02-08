@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  web:
+    build: .
+    image: worldofgames
+    container_name: worldofgames
+    ports:
+      - "8888:80"
+    volumes:
+      - ./:/app/
